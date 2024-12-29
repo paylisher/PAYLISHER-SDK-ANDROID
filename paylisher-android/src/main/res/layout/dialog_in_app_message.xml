@@ -1,0 +1,81 @@
+<!-- dialog_in_app_message.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_background"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <!-- Image Container with Overlaid Close Button -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/messageImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"
+            android:visibility="visible" />
+<!--        <View-->
+<!--            android:layout_width="36dp"-->
+<!--            android:layout_height="36dp"-->
+<!--            android:layout_gravity="end|top"-->
+<!--            android:background="#80FFFFFF" />-->
+
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="end|top"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Close"
+            android:padding="8dp"
+            android:src="@drawable/ic_close"
+            android:elevation="4dp" />
+
+    </FrameLayout>
+
+    <!-- Content Layout for Text and Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Title Text aligned to the left -->
+        <TextView
+            android:id="@+id/messageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingBottom="4dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Body Text aligned to the left, below Title -->
+        <TextView
+            android:id="@+id/messageBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingBottom="16dp"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <!-- Action Button aligned below Body Text -->
+        <Button
+            android:id="@+id/actionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:backgroundTint="@color/primaryColor"
+            android:text="Take Action"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

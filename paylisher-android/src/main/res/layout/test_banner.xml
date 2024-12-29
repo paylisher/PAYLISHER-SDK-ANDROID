@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inAppLayoutBanner"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top"
+    android:background="@color/gray">
+
+    <!-- Background container for the banner -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:elevation="4dp"
+        android:background="@color/white">
+
+        <!-- Left: Image container -->
+        <ImageView
+            android:id="@+id/banner_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:scaleType="centerCrop"
+            android:contentDescription="banner_image_desc"
+            android:clipToOutline="true" />
+
+        <!-- Right: Text and close button -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <!-- Close button on the top-right -->
+            <ImageButton
+                android:id="@+id/close_button"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_close"
+                android:contentDescription="close_button_desc" />
+
+            <!-- Banner Text -->
+            <TextView
+                android:id="@+id/banner_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/close_button"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="4dp"
+                android:text="Banner Title"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <!-- Subtitle/description below the main text -->
+            <TextView
+                android:id="@+id/banner_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/banner_text"
+                android:layout_marginTop="4dp"
+                android:text="Banner subtitle goes here"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:maxLines="2"
+                android:ellipsize="end" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#80000000"
+    android:gravity="center">
+
+    <!-- Modal Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/modalImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="modal_image_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/common_google_signin_btn_icon_dark" />
+
+        <!-- Message Body -->
+        <TextView
+            android:id="@+id/modalMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="This is the message body for the in-app modal."
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+        <!-- Action Button -->
+        <Button
+            android:id="@+id/actionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/gray"
+            android:text="Take Action"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- Close Button overlaid on top of the modal -->
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="close_button_description"
+        android:src="@drawable/ic_close" />
+
+</RelativeLayout>

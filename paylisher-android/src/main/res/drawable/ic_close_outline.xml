@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Outer Circle Outline (same width as the "X") -->
+    <path
+        android:pathData="M12,2a10,10 0 1,0 0,20a10,10 0 1,0 0,-20z"
+        android:strokeColor="#000000"
+        android:strokeWidth="2"
+        android:fillColor="#00000000" /> <!-- No fill -->
+
+    <!-- X in the center -->
+    <path
+        android:pathData="M8,8 L16,16 M8,16 L16,8"
+        android:strokeColor="#000000"
+        android:strokeWidth="2"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round" />
+</vector>
