@@ -45,7 +45,7 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.paylisher"
             artifactId = "paylisher-sdk-android"
-            version = "1.0.0"
+            version = "1.0.1"
 
             afterEvaluate {
                 from(components["release"])
@@ -121,7 +121,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation("com.paylisher:paylisher-sdk:1.0.0")
+    implementation("com.paylisher:paylisher-sdk:1.0.1")
     // implementation(project(":paylisher"))
     implementation(libs.androidx.work.runtime.ktx)
     testImplementation(libs.junit)
