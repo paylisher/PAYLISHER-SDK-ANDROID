@@ -122,7 +122,7 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation("com.paylisher:paylisher-sdk:1.0.1")
-    // implementation(project(":paylisher"))
+    //implementation(project(":paylisher"))
     implementation(libs.androidx.work.runtime.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
