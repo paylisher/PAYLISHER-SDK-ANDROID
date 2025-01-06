@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "999467716325",
+    "project_id": "paylisher-sample",
+    "storage_bucket": "paylisher-sample.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999467716325:android:1a85bec933a7f66ff14e0c",
+        "android_client_info": {
+          "package_name": "com.paylisher.android.sample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCJvYhSId-TM7hlcJ4WUAcI5MYFv2T2Ko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
